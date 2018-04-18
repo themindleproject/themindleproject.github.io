@@ -94,7 +94,7 @@ app.controller('loginCtrl', function ($scope, $location, $http, user) {
         var password = $scope.loginpwd;
 
         $http({
-            url: 'http://localhost/tmdserver/login.php',
+            url: 'http://localhost/tmd/server/login.php',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -144,7 +144,7 @@ app.controller('registerCtrl', function ($scope, $location, $http, user) {
         var regpwd = $scope.regpwd;
 
         $http({
-            url: 'http://localhost/tmdserver/register.php',
+            url: 'http://localhost/tmd/server/register.php',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -168,7 +168,7 @@ app.controller('registerCtrl', function ($scope, $location, $http, user) {
         var username = $scope.username;
 
         $http({
-            url: 'http://localhost/tmdserver/allusers.php',
+            url: 'http://localhost/tmd/server/allusers.php',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
