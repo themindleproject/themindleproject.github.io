@@ -1,0 +1,21 @@
+<div class="login-dark" style="background-color:#1cac91;background-image:linear-gradient(135deg, #1cac91, #21a9af);">
+    <form method="post">
+        <h2 class="text-center">LOGIN</h2>
+        <div class="illustration">
+            <i class="icon ion-ios-locked-outline" style="color:#1cac91;"></i>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="email" name="email" ng-model="loginemail" required="" placeholder="Email" autocomplete="on" inputmode="email"
+                style="font-size:20px;">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" ng-model="loginpwd" required="" placeholder="Password" style="font-size:20px;">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" ng-click="login()" style="background-color:#1cac91;">Log In</button>
+        </div>
+        <a class="forgot" ng-click="gotoregister()" style="font-size:14px;">Dont have an account?</a>
+        <br>
+        <a class="forgot" ng-click="gotohome()" style="font-size:14px;">Go back home</a>
+    </form>
+</div>

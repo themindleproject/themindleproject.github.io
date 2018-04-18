@@ -1,0 +1,8 @@
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #1cac91;
+  font-size: 12px;
+  border: 1px solid #1cac91;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,26 @@
+<div class="login-dark" style="background-color:#1cac91;background-image:linear-gradient(135deg, #1cac91, #21a9af);">
+    <form method="post">
+        <h1 class="text-center">Register</h1>
+        <div class="illustration">
+            <i class="icon ion-ios-contact" style="color:#1cac91;"></i>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="fullname" ng-model="fullname" required="" placeholder="Full Name" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="username" ng-blur="checkUserName()" ng-model="username" required="" placeholder="UserName" autocomplete="on" style="border-bottom-color: {{alcolor}};">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="email" name="email" ng-change="checkEmail()" ng-model="regemail" required="" placeholder="Email" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" ng-model="regpwd" placeholder="Password" minlength="6">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" ng-click="register()" style="background-color:#1cac91;">Register</button>
+        </div>
+        <a class="forgot" ng-click="gotologin()" style="font-size:14px;">Already have an account?</a>
+        <br>
+        <a class="forgot" ng-click="gotohome()" style="font-size:14px;">Go back home</a>
+    </form>
+</div>
